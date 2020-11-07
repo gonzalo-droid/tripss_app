@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review_list.dart';
 
 void main() {  // method main
   runApp(MyApp());
@@ -14,14 +15,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        //fontFamily: "Lato", => cambia el fontFamily en toda la app
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hi world"),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Bahamas", 4, descriptionDummy),
+                ReviewList()
+
+              ],
+            ),
+
+          ],
         ),
-        body: new DescriptionPlace("Bahamas", 4, descriptionDummy),
       )// MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
