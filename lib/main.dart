@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 void main() {  // method main
   runApp(MyApp());
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: Stack(
+        body: Stack( // un elmento lo pone encima de otro
           children: <Widget>[
-            ListView(
+            GradientBack(),
+            ListView( // list view
               children: <Widget>[
                 DescriptionPlace("Bahamas", 4, descriptionDummy),
                 ReviewList()
