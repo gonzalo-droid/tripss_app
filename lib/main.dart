@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tripss_app/header_appbar.dart';
 import 'description_place.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() {  // method main
   runApp(MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Stack( // un elmento lo pone encima de otro
           children: <Widget>[
-            GradientBack("Popular"),
+
             ListView( // list view
               children: <Widget>[
                 DescriptionPlace("Bahamas", 4, descriptionDummy),
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
 
               ],
             ),
+            HeaderAppBar(),
           ],
         ),
       )// MyHomePage(title: 'Flutter Demo Home Page'),
