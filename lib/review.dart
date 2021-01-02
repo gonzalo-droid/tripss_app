@@ -99,7 +99,7 @@ class Review extends StatelessWidget {
     );
 
     final userDetails = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start, //alineacion a left
       children: <Widget>[
         userName,
         userInfoFull,
@@ -131,7 +131,6 @@ class Review extends StatelessWidget {
       children: <Widget>[
         photo,
         userDetails
-
       ],
     );
 

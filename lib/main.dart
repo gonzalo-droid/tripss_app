@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Stack( // un elmento lo pone encima de otro
           children: <Widget>[
-            GradientBack(),
+            GradientBack("Popular"),
             ListView( // list view
               children: <Widget>[
                 DescriptionPlace("Bahamas", 4, descriptionDummy),
@@ -31,7 +31,6 @@ class MyApp extends StatelessWidget {
 
               ],
             ),
-
           ],
         ),
       )// MyHomePage(title: 'Flutter Demo Home Page'),

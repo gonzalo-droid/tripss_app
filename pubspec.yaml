@@ -62,8 +62,10 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  #para add varios file
+  # - assets/img/
   assets:
-     - assets/img/people.jpg
+     - assets/img/ #people.jpg
 
   fonts:
     - family: Lato
