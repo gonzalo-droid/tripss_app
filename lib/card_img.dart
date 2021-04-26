@@ -29,7 +29,7 @@ class CardImg extends StatelessWidget {
     );
 
     return Stack(
-      alignment: Alignment(0.9, 1.1),
+      alignment: Alignment(0.9, 1.1),//x,y
       children: <Widget>[card, FloatingActionButtonGreen()],
     );
   }

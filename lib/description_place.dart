@@ -103,7 +103,7 @@ class DescriptionPlace extends StatelessWidget{
     );
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start, //alineacion left
       children: <Widget>[
         title_stars,
         description,

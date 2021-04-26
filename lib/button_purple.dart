@@ -11,7 +11,7 @@ class ButtonPurple extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-        margin: EdgeInsets.only(
+        margin: EdgeInsets.only( //evitar clic fuera del boton
             top: 30.0,
             left: 20.0,
             right: 20.0
