@@ -7,7 +7,8 @@ class CardImgList extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      height: 350.0,
+      // color: Colors.pink,
+      height: 300.0,
       child: ListView(
         padding: EdgeInsets.all(25.0),
         scrollDirection: Axis.horizontal,

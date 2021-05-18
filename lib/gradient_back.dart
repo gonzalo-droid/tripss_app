@@ -8,7 +8,7 @@ class GradientBack extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      height: 250.0,
+      height: 200.0,
       decoration: BoxDecoration(
           gradient: LinearGradient( //forma del graidiente
               colors: [

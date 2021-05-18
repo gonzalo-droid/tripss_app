@@ -12,9 +12,9 @@ class CardImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final card = Container(
-      height: 350.0,
+      height: 300.0,
       width: 250.0,
-      margin: EdgeInsets.only(top: 80.0, left: 20.0),
+      margin: EdgeInsets.only(top: 5.0, left: 20.0),
       decoration: BoxDecoration(
           image:
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage)),
