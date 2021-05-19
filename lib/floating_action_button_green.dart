@@ -31,6 +31,7 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return FloatingActionButton(
+      heroTag: "class",
       backgroundColor: Color(0xFF11DA53),
       mini: true, //tamaño del elemento valor mini default false
       tooltip: "Fav",

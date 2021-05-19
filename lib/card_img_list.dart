@@ -10,7 +10,7 @@ class CardImgList extends StatelessWidget {
       // color: Colors.pink,
       height: 300.0,
       child: ListView(
-        padding: EdgeInsets.all(25.0),
+        padding: EdgeInsets.symmetric(horizontal:  25.0,vertical: 10.0),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           CardImg("assets/img/place1.jpg"),

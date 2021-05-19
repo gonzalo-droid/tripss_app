@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tripss_app/screen/item/item_screen.dart';
 import 'floating_action_button_green.dart';
 
 class CardImg extends StatelessWidget {
-
-
   String pathImage = "assets/img/place4.jpeg";
 
   CardImg(this.pathImage);
-
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +27,32 @@ class CardImg extends StatelessWidget {
     );
 
     return Stack(
-      alignment: Alignment(0.9, 1.1),//x,y
-      children: <Widget>[card, FloatingActionButtonGreen()],
+      alignment: Alignment(0.9, 1.1), //x,y
+      children: <Widget>[
+        GestureDetector(
+          onTap: () => Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new ItemScreen()
+                    )
+                  ),
+          child:card,
+          )
+        
+
+        // FloatingActionButton(
+        //   heroTag: "home_screem",
+        //   backgroundColor: Color(0xFF11DA53),
+        //   mini: true, //tamaño del elemento valor mini default false
+        //   tooltip: "Fav",
+        //   onPressed: () {},
+        //   child: Icon(
+        //       // this._pressed  ? Icons.favorite:
+        //       Icons.favorite_border),
+        // )
+        
+        // FloatingActionButtonGreen()
+      ],
     );
   }
 }

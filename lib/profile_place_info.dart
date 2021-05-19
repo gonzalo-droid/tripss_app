@@ -90,7 +90,18 @@ class ProfilePlaceInfo extends StatelessWidget {
       alignment: Alignment(0.8, 1.25),
       children: <Widget>[
         card,
-        FloatingActionButtonGreen()
+        // FloatingActionButtonGreen()
+
+        // FloatingActionButton(
+        //   heroTag: "list_item_screen",
+        //   backgroundColor: Color(0xFF11DA53),
+        //   mini: true, //tamaño del elemento valor mini default false
+        //   tooltip: "Fav",
+        //   onPressed: () {},
+        //   child: Icon(
+        //       // this._pressed  ? Icons.favorite:
+        //       Icons.favorite_border),
+        // )
       ],
     );
   }
