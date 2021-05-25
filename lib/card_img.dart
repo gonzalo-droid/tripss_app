@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tripss_app/screen/item/item_screen.dart';
+import 'package:tripss_app/util/constant.dart';
 import 'floating_action_button_green.dart';
 
 class CardImg extends StatelessWidget {
-  String pathImage = "assets/img/place4.jpeg";
+  final Map<String, Object> item ;
+  final int index = 0;
 
-  CardImg(this.pathImage);
+  CardImg(this.item,);
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +19,7 @@ class CardImg extends StatelessWidget {
       margin: EdgeInsets.only(top: 5.0, left: 20.0),
       decoration: BoxDecoration(
           image:
-              DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage)),
+              DecorationImage(fit: BoxFit.cover, image: AssetImage(item['imgUrl'])),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
           shape: BoxShape.rectangle,
           boxShadow: <BoxShadow>[
@@ -37,7 +41,31 @@ class CardImg extends StatelessWidget {
                     )
                   ),
           child:card,
-          )
+          ),
+          
+
+          Container(
+        // padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
+        margin: EdgeInsets.only(bottom: 20.0),
+        decoration: BoxDecoration(
+          // color: Color(0xFF4268D3),
+          borderRadius: BorderRadius.all(Radius.circular(40)),
+        ),
+        child: ElevatedButton(
+          child:
+              Container(padding: EdgeInsets.all(5.0), child: Text(item['title'])),
+          style: ElevatedButton.styleFrom(
+            primary: Color(0xFF4268D3),
+            onPrimary: Colors.white,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                side: BorderSide(color:  Color(0xFF4268D3))
+                ),
+          ),
+          onPressed: (){},
+          
+        ),
+      )
         
 
         // FloatingActionButton(

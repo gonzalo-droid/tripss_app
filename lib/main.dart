@@ -20,9 +20,6 @@ class MyApp extends StatelessWidget {
       routes: {
         'home_screen': (BuildContext context) => HomeScreen(),
       },
-
-
-
     );
   }
 }

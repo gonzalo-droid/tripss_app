@@ -34,7 +34,7 @@ class ItemScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              CardImgList(),
+              CardImgList("chiclayo"),
               // ButtonsbarItem(),
               SizedBox(
                 height: 20.0,

@@ -24,23 +24,34 @@ class HomeScreen extends StatelessWidget {
                 height: 200.0,
               ),
               SectionTitle(
-                title: 'Museos',
+                title: 'Chiclayo',
               ),
-              CardImgList(),
+              CardImgList("chiclayo"),
+              
               SizedBox(
                 height: 30.0,
               ),
               SectionTitle(
-                title: 'Arquitectura',
+                title: 'Lambayeque',
               ),
-              CardImgList(),
+              CardImgList("lambayeque"),
+              
+              
               SizedBox(
                 height: 30.0,
               ),
               SectionTitle(
-                title: 'Naturaleza',
+                title: 'Tucume',
               ),
-              CardImgList(),
+              CardImgList("tucume"),
+
+              SizedBox(
+                height: 30.0,
+              ),
+              SectionTitle(
+                title: 'Pimentel',
+              ),
+              CardImgList("pimentel"),
             ],
           ),
           HeaderAppBar()

@@ -17,15 +17,23 @@ class ListItemScreen extends StatelessWidget {
               // ProfileHeader(),
               AppBar(
                 title: ListTile(
-                    title: Text(
-                      "Los Mejores Museos",
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                      maxLines: 2,
-                    ),
-                    ),
+                  title: Text(
+                    "Los Mejores lugares en",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                    maxLines: 2,
+                  ),
+                  subtitle: Text(
+                    "Chiclayo",
+                    style: TextStyle(
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                    maxLines: 2,
+                  ),
+                ),
                 backgroundColor: Colors.transparent,
                 elevation: 0.0,
                 toolbarHeight: 200.0,
@@ -35,7 +43,6 @@ class ListItemScreen extends StatelessWidget {
           ),
         ],
       ),
-
       bottomNavigationBar: CoustomBottomNavBar(),
     );
   }

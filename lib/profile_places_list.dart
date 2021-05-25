@@ -4,7 +4,7 @@ import 'place.dart';
 
 class ProfilePlacesList extends StatelessWidget {
 
-  Place place = new Place('Knuckles Mountains Range', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
+  Place place = new Place('Museo Lambayeque', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
   Place place2 = new Place('Mountains', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '321,321,321');
   Place place3 = new Place('Mountains', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '321,321,321');
 
