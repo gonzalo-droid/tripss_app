@@ -92,6 +92,7 @@ class DescriptionPlace extends StatelessWidget{
       ),
       child: new Text(
         descriptionPlace,
+        textAlign: TextAlign.justify,
         style: const TextStyle(
             fontFamily: "Lato",
             fontSize: 16.0,

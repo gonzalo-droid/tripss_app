@@ -51,7 +51,7 @@ class ProfilePlaceInfo extends StatelessWidget {
     );
 
     final steps = Text(
-      'Steps ${this.place.steps}',
+      'Visitantes ${this.place.steps}',
       style: TextStyle(
           fontFamily: 'Lato',
           fontSize: 14.0,
@@ -79,7 +79,7 @@ class ProfilePlaceInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               place,
-              placeInfo,
+              // placeInfo,
               steps
             ],
           )

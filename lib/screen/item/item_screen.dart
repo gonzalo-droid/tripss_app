@@ -10,7 +10,7 @@ import 'components/buttonsbar_item.dart';
 
 class ItemScreen extends StatelessWidget {
   String descriptionDummy =
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+      "Se encuentra adornado de jardines con bellas flores y cuyo principal atractivo es un monumento de rotondas ornamentadas con esculturas helénicas. \n\n Cuando se llega al Paseo Las Musas, se observa primero un portal que es sostenido por cuatro cariatides de aproximadamente cinco metros de altura, sobre la cual está el lema “Heroica Ciudad de Chiclayo”, un título que se le fue dado a los pobladores que defendieron los intereses patrios durante la guerra del pacífico.\n\n Cabe destacar que estas esculturas magníficas fueron creadas por el artista Celendino Miguel A. Díaz Díaz y que es el único lugar de este tipo en esta parte del Perú. ";
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class ItemScreen extends StatelessWidget {
       appBar: AppBar(
         title: ListTile(
           title: Text(
-            "Museo Señor de Sipan",
+            "Paseo las Musas",
             style: TextStyle(
                 fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
             maxLines: 2,
@@ -26,7 +26,7 @@ class ItemScreen extends StatelessWidget {
         ),
         backgroundColor: Color(0xFF4268D3),
         elevation: 0.0,
-        toolbarHeight: 150.0,
+        toolbarHeight: 100.0,
       ),
 
       
@@ -39,7 +39,7 @@ class ItemScreen extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              DescriptionPlace("Pimentel", 4, descriptionDummy),
+              DescriptionPlace("Paseo las musas", 4, descriptionDummy),
               // ProfilePlacesList()
 
               ReviewList(),

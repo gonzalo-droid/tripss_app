@@ -26,7 +26,7 @@ class ListItemScreen extends StatelessWidget {
                     maxLines: 2,
                   ),
                   subtitle: Text(
-                    "Chiclayo",
+                    "Lambayeque",
                     style: TextStyle(
                         fontSize: 50,
                         fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class ListItemScreen extends StatelessWidget {
                 ),
                 backgroundColor: Colors.transparent,
                 elevation: 0.0,
-                toolbarHeight: 200.0,
+                toolbarHeight: 150.0,
               ),
               ProfilePlacesList()
             ],
